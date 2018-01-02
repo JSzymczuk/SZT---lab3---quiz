@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}strona główna{% endblock %}
+
+{% block content %}
+
+	<a href='/questions'  id='take-quiz-button'   class='button'>Nowy test</a>
+	<a href='/top-scores' id='top-scores-button'  class='button'>Najlepsze wyniki</a>
+	
+	<script>
+		$(document).ready(function() {
+			$('#take-quiz-button').on('click', function() { });
+			$('#top-scores-button').on('click', function() { });
+		});
+	</script>
+	
+{% endblock %}

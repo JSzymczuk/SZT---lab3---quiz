@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}najlepsze wyniki{% endblock %}
+
+{% load humanize %}
+{% block content %}
+
+	<h2>Najlepsze wyniki:</h2>
+	
+	<ol class='top-scores'>
+		{% for score in scores %}
+			<li><span>{{ score.username }}</span><span>{{ score.score|intcomma }}</span>
+		{% endfor %}
+	</ol>
+	
+	<a href='/index' id='return-button' class='button bottom-button'>Powrót</a>
+	
+	<script>
+		$(document).ready(function() {
+			$('#return-button').on('click', function() { });
+		});
+	</script>
+	
+{% endblock %}

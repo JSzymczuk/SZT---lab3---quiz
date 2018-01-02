@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang='pl'>
+<head>
+	{% load static %}
+	<meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
+	<title>Quiz Bożonarodzeniowy - {% block title %}{% endblock %}</title>
+	<link rel='stylesheet' href='{% static 'style.css' %}'/>
+	<link href="https://fonts.googleapis.com/css?family=Comfortaa:700|Concert+One|Roboto+Condensed:400" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class='body-content'>
+		<main>
+			<div class='quiz-box'>
+				<h1>Quiz Bożonarodzeniowy</h1>
+				<hr>				
+				<div class='quiz-frame'>				
+					{% block content %}{% endblock %}
+				</div>
+				
+			</div>
+		</main>
+	</div>	
+	
+	<footer>
+		<div class='copyright'>
+			Systemy Zarządzania Treścią: Quiz Bożonarodzeniowy<br>
+			&copy;2017 Jakub Szymczuk, Agata Dolatowska, Dawid Szylderowicz
+		</div>
+	</footer>
+	
+	<script>		
+		function hideCurrentQuestion() {
+			$('#question-area-' + localStorage.getItem("currentQuestion")).hide();
+		}
+	
+		function displayQuestion(number) {
+			var total = parseInt(localStorage.getItem("totalQuestions"));
+			
+			if (number >= 0 && number < total) {
+			
+				hideCurrentQuestion();
+				localStorage.setItem("currentQuestion", number);
+				$('#question-area-' + number).show();
+
+				var ch = $('#question-list').children();
+				for (var i = 0; i <= number; ++i) {
+					$(ch[i]).addClass('answered');
+				}
+				for (; i < total; ++i) {
+					$(ch[i]).removeClass('answered');
+				}
+				
+				var prevBtn = $('#prev-button');
+				if (number > 0) {
+					prevBtn.show();
+					prevBtn.off('click');
+					prevBtn.on('click', function() { displayQuestion(number - 1); });
+				}
+				else {
+					prevBtn.hide();
+					prevBtn.off('click');
+				}
+				
+				var nextBtn = $('#next-button');
+				nextBtn.show();
+				nextBtn.off('click');
+				if (number < total - 1) {
+					nextBtn.on('click', function() { displayQuestion(number + 1); });
+				}
+				else {
+					nextBtn.on('click', function() { computeScore(); });
+				}
+			}
+		}
+		
+		function computeScore() {
+			//hideCurrentQuestion();
+			//$('#question-list').hide();
+			//window.location.href = '/loader';
+			$('#quiz').submit();
+		}
+	</script>
+</body>

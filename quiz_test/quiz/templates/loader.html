@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}trwa przetwarzanie{% endblock %}
+
+{% block content %}
+
+	<div class='loader'></div>
+					
+	<script>
+		$(document).ready(function() {
+			window.setTimeout(function() {
+				window.location.href = '/score';
+			}, 5000);
+		});
+	</script>
+	
+{% endblock %}

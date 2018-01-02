@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}Twój wynik{% endblock %}
+
+{% load humanize %}
+{% block content %}
+
+	<p class='score'>Twój wynik to:<br>{{ score|intcomma }} / 20 pkt</p>
+	<a href='/index' id='return-button' class='button bottom-button'>Menu główne</a>
+	
+	<script>
+		$(document).ready(function() {
+			$('#return-button').on('click', function() { });
+		});
+	</script>
+	
+{% endblock %}

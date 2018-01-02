@@ -1,0 +1,95 @@
+{% extends 'layout.html' %}
+
+{% block title %}rozwiąż quiz{% endblock %}
+
+{% block content %}
+
+	<ol id='question-list'>
+		{% for question in questions.all %}
+			<li>{{ forloop.counter }}
+		{% endfor %}
+	</ol>
+
+	<form action="{% url 'testpost' %}" method="post">
+
+		{% csrf_token %}
+	
+		<div id='username-input' class='question-area'>
+			<p>
+				Wprowadź swoje imię albo pseudonim.
+			</p>
+			<input type='text' name='username'>
+			
+		</div>
+
+		{% for question in questions.all %}
+		
+			{% with loop_counter=forloop.counter0 %}
+			<div id='question-area-{{ loop_counter }}' class='question-area' style='display:none'>
+				<h2>Pytanie {{ forloop.counter }}</h2>
+				<p>
+					{{ question.text }}
+					<span class='points'>
+						{% if question.points == 1 %}
+							(1pkt)
+						{% else %}
+							({{question.points}}pkt.)
+						{% endif %}
+					</span>
+				</p>
+				
+				{% if question.type == 0 %}
+					<ol>
+						{% for answer in question.answers %}
+							<li>
+								<input type='radio' name='question[{{ question.id }}]' value='{{ answer.get_id }}'>
+								<span class='answer'>{{ answer.text }}</span>
+							</li>
+						{% endfor %}
+					</ol>
+				{% elif question.type == 1 %}
+					<ol>
+						{% for answer in question.answers %}
+							<li>
+								<input type='checkbox' name='question[{{ question.id }}]' value='{{ answer.get_id }}'>
+								<span class='answer'>{{ answer.text }}</span>
+							</li>
+						{% endfor %}
+					</ol>
+				{% elif question.type == 2 %}
+					<input type='text' name='question[{{ question.id }}]'>
+				{% elif question.type == 3 %}
+					<input type='number' name='question[{{ question.id }}]'>
+				{% endif %}
+				
+			</div>
+			{% endwith %}
+			
+		{% endfor %}
+<input type="submit" value="Vote" />
+	</form>
+
+	<div class='buttons'>
+		<div id='prev-button'   class='button prev-next-button'>&lt;</div>
+		<div id='next-button'   class='button prev-next-button'>&gt;</div>					
+		<div id='begin-button'  class='button bottom-button'>Rozpocznij</div>
+	</div>
+
+	<script>
+		$(document).ready(function() {
+			localStorage.setItem("totalQuestions", {{ count }});
+			$('#prev-button').hide();
+			$('#next-button').hide();
+			
+			var beginButton = $('#begin-button');
+			beginButton.on('click', function() { 
+				$('#begin-button').hide();
+				$('#username-input').hide();
+				displayQuestion(0);
+				$('#question-list').show();
+			});		
+			$('#question-list').hide();
+		});
+	</script>
+	
+{% endblock %}

@@ -1,0 +1,153 @@
+		
+{ 
+	"text":   "Która z osób by³a twórc¹ tekstu oryginalnej wersji kolêdy Cicha Noc?", 
+	"points": 1, 
+	"order":  4, 
+	"type":   0, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Johannes Schlaf", "order": 0, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Franz Gruber", "order": 1, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Joseph Mohr", "order": 2, "is_correct": true }, 
+		{ "_id": new ObjectId(), "text": "Friedrich Hebbel", "order": 3, "is_correct": false } 
+	] 
+},
+
+{ 
+	"text":   "Którego z poni¿szych regionów tradycyjn¹ potrawê wigilijn¹ stanowi¹ bukty?", 
+	"points": 1, 
+	"order":  6,
+	"type":   0, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Mazowsze",     "order": 0, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Podhale",      "order": 1, "is_correct": true  }, 
+		{ "_id": new ObjectId(), "text": "Podlasie",     "order": 2, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Wielkopolska", "order": 3, "is_correct": false } 
+	] 
+},
+
+{ 
+	"text":  "Wybierz pañstwa, w których 25 grudnia NIE jest dniem ustawowo wolnym od pracy.", 
+	"points": 4, 
+	"order":  9,
+	"type":   1, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Wenezuela", "order": 0, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Algieria",  "order": 1, "is_correct": true  }, 
+		{ "_id": new ObjectId(), "text": "Norwegia",  "order": 2, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Tunezja",   "order": 3, "is_correct": true  },
+		{ "_id": new ObjectId(), "text": "Pakistan",  "order": 4, "is_correct": false } 
+	] 
+},
+
+{ 
+	"text": "Podaj imiê i nazwisko aktora, który wcieli³ siê w postaæ Kevin McCallistera w filmie 'Kevin sam w domu' (1990).",
+	"points": 2, 
+	"order":  8,
+	"type":   2, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Macaulay Culkin", "order": 0, "is_correct": true },		
+		{ "_id": new ObjectId(), "text": "Culkin Macaulay", "order": 1, "is_correct": true }
+	] 
+},
+
+{ 
+	"text": "Jak nazywa siê rodzaj kolêdy, w której bo¿onarodzeniowa tematyka religijna poszerzona zosta³a o warstwê obyczajow¹?",
+	"points": 2, 
+	"order":  5,
+	"type":   2, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "pastoralka", "order": 0, "is_correct": true },		
+		{ "_id": new ObjectId(), "text": "pastora³ka", "order": 1, "is_correct": true }
+	] 
+},
+
+{ 
+	"text": "Podaj imiê œwiêtego, którego œwiêto obchodzone jest w Koœciele katolickim 26 grudnia.",
+	"points": 2, 
+	"order":  2,
+	"type":   2, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Szczepan",     "order": 0, "is_correct": true },		
+		{ "_id": new ObjectId(), "text": "œw. Szczepan", "order": 1, "is_correct": true },		
+		{ "_id": new ObjectId(), "text": "sw. Szczepan", "order": 1, "is_correct": true },			
+		{ "_id": new ObjectId(), "text": "sw Szczepan", "order": 1, "is_correct": true },
+		{ "_id": new ObjectId(), "text": "œw Szczepan", "order": 1, "is_correct": true },		
+		{ "_id": new ObjectId(), "text": "œwiêty Szczepan", "order": 1, "is_correct": true },
+	] 
+},
+
+{ 
+	"text":  "Wybierz tradycyjne imiona mêdrców, którzy przybyli z³o¿yæ ho³d m³odemu Jezusowi.", 
+	"points": 3, 
+	"order":  1,
+	"type":   1, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Mendel",   "order": 0, "is_correct": false  }, 
+		{ "_id": new ObjectId(), "text": "Nikodem",  "order": 1, "is_correct": false } ,
+		{ "_id": new ObjectId(), "text": "Baltazar", "order": 2, "is_correct": true }, 
+		{ "_id": new ObjectId(), "text": "Kacper",   "order": 3, "is_correct": true }, 
+		{ "_id": new ObjectId(), "text": "Abraham",  "order": 4, "is_correct": false  },
+		{ "_id": new ObjectId(), "text": "Izajasz",  "order": 5, "is_correct": false } ,
+	] 
+},
+
+{ 
+	"text":   "Które ze zwierz¹t w tradycji chrzeœcijañskiej NIE by³o obecne w stajence?", 
+	"points": 1, 
+	"order":  0, 
+	"type":   0, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "Osio³", "order": 0, "is_correct": false },  
+		{ "_id": new ObjectId(), "text": "Wó³", "order": 3, "is_correct": false },
+		{ "_id": new ObjectId(), "text": "Owca", "order": 2, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Lama", "order": 1, "is_correct": true }
+	] 
+},
+
+{ 
+	"text": "W którym roku reklama napoju Coca-Cola po raz pierwszy wykorzysta³a wizerunek Œwiêtego Miko³aja zaprojektowany przez Haddona Sundbloma?",
+	"points": 2, 
+	"order":  5,
+	"type":   3, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "1931", "order": 0, "is_correct": true }
+	] 
+},
+
+{ 
+	"text":   "W którym ze œrodowisk po raz pierwszy pojawi³ siê zwyczaj przystrajania drzew w okresie œwi¹tecznym?", 
+	"points": 1, 
+	"order":  7,
+	"type":   0, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "staro¿ytny Rzym (V wiek p.n.e.)", "order": 1, "is_correct": true  }, 
+		{ "_id": new ObjectId(), "text": "wyznawcy judaizmu (IV wiek p.n.e.)", "order": 3, "is_correct": false },
+		{ "_id": new ObjectId(), "text": "Celtowie (IV wiek n.e.)", "order": 2, "is_correct": false },  
+		{ "_id": new ObjectId(), "text": "niemieccy protestanci (XVI wiek n.e.)", "order": 0, "is_correct": false }, 
+		{ "_id": new ObjectId(), "text": "Koœció³ prawos³awny (XV wiek n.e.)", "order": 1, "is_correct": false  }, 
+	
+	] 
+},
+
+{ 
+	"text":   "Który dzieñ tygodnia uznawany jest za dzieñ narodzin Jezusa (wed³ug obowi¹zuj¹cego obecnie ustalenia Hipolita z Rzymu)?", 
+	"points": 1, 
+	"order":  8,
+	"type":   0, 
+	"answers": [ 
+		{ "_id": new ObjectId(), "text": "niedziela", "order": 0, "is_correct": false  }, 
+		{ "_id": new ObjectId(), "text": "poniedzia³ek", "order": 0, "is_correct": false  }, 
+		{ "_id": new ObjectId(), "text": "wtorek", "order": 0, "is_correct": false  }, 
+		{ "_id": new ObjectId(), "text": "œroda", "order": 0, "is_correct": true  }, 
+		{ "_id": new ObjectId(), "text": "czwartek", "order": 0, "is_correct": false  }, 
+		{ "_id": new ObjectId(), "text": "pi¹tek", "order": 0, "is_correct": false  }, 
+		{ "_id": new ObjectId(), "text": "sobota", "order": 0, "is_correct": false  }, 
+	] 
+},
+
+
+
+
+{"text": "Która z osób by³a twórc¹ tekstu oryginalnej wersji kolêdy Cicha Noc?", "points": 1, "order": 4, "type": 0, "answers": [{"_id": new ObjectId(), "text": "Johannes Schlaf", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "Franz Gruber", "order": 1, "is_correct": false},{"_id": new ObjectId(), "text": "Joseph Mohr", "order": 2, "is_correct": true},{"_id": new ObjectId(), "text": "Friedrich Hebbel", "order": 3, "is_correct": false}]},{"text": "Którego z poni¿szych regionów tradycyjn¹ potrawê wigilijn¹ stanowi¹ bukty?", "points": 1, "order": 6,"type": 0, "answers": [{"_id": new ObjectId(), "text": "Mazowsze", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "Podhale", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "Podlasie", "order": 2, "is_correct": false},{"_id": new ObjectId(), "text": "Wielkopolska", "order": 3, "is_correct": false}]},{"text": "Wybierz pañstwa, w których 25 grudnia NIE jest dniem ustawowo wolnym od pracy.", "points": 4, "order": 9,"type": 1, "answers": [{"_id": new ObjectId(), "text": "Wenezuela", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "Algieria", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "Norwegia", "order": 2, "is_correct": false},{"_id": new ObjectId(), "text": "Tunezja", "order": 3, "is_correct": true},{"_id": new ObjectId(), "text": "Pakistan", "order": 4, "is_correct": false}]},{"text": "Podaj imiê i nazwisko aktora, który wcieli³ siê w postaæ Kevin McCallistera w filmie 'Kevin sam w domu' (1990).","points": 2, "order": 8,"type": 2, "answers": [{"_id": new ObjectId(), "text": "Macaulay Culkin", "order": 0, "is_correct": true},{"_id": new ObjectId(), "text": "Culkin Macaulay", "order": 1, "is_correct": true}]},{"text": "Jak nazywa siê rodzaj kolêdy, w której bo¿onarodzeniowa tematyka religijna poszerzona zosta³a o warstwê obyczajow¹?","points": 2, "order": 5,"type": 2, "answers": [{"_id": new ObjectId(), "text": "pastoralka", "order": 0, "is_correct": true},{"_id": new ObjectId(), "text": "pastora³ka", "order": 1, "is_correct": true}]},{"text": "Podaj imiê œwiêtego, którego œwiêto obchodzone jest w Koœciele katolickim 26 grudnia.","points": 2, "order": 2,"type": 2, "answers": [{"_id": new ObjectId(), "text": "Szczepan", "order": 0, "is_correct": true},{"_id": new ObjectId(), "text": "œw. Szczepan", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "sw. Szczepan", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "sw Szczepan", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "œw Szczepan", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "œwiêty Szczepan", "order": 1, "is_correct": true},]},
+
+{"text": "Wybierz tradycyjne imiona mêdrców, którzy przybyli z³o¿yæ ho³d m³odemu Jezusowi.", "points": 3, "order": 1,"type": 1, "answers": [{"_id": new ObjectId(), "text": "Mendel", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "Nikodem", "order": 1, "is_correct": false},{"_id": new ObjectId(), "text": "Baltazar", "order": 2, "is_correct": true},{"_id": new ObjectId(), "text": "Kacper", "order": 3, "is_correct": true},{"_id": new ObjectId(), "text": "Abraham", "order": 4, "is_correct": false},{"_id": new ObjectId(), "text": "Izajasz", "order": 5, "is_correct": false},]},{"text": "Które ze zwierz¹t w tradycji chrzeœcijañskiej NIE by³o obecne w stajence?", "points": 1, "order": 0, "type": 0, "answers": [{"_id": new ObjectId(), "text": "Osio³", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "Wó³", "order": 3, "is_correct": false},{"_id": new ObjectId(), "text": "Owca", "order": 2, "is_correct": false},{"_id": new ObjectId(), "text": "Lama", "order": 1, "is_correct": true}]},{"text": "W którym roku reklama napoju Coca-Cola po raz pierwszy wykorzysta³a wizerunek Œwiêtego Miko³aja zaprojektowany przez Haddona Sundbloma?","points": 2, "order": 5,"type": 3, "answers": [{"_id": new ObjectId(), "text": "1931", "order": 0, "is_correct": true}]},{"text": "W którym ze œrodowisk po raz pierwszy pojawi³ siê zwyczaj przystrajania drzew w okresie œwi¹tecznym?", "points": 1, "order": 7,"type": 0, "answers": [{"_id": new ObjectId(), "text": "staro¿ytny Rzym (V wiek p.n.e.)", "order": 1, "is_correct": true},{"_id": new ObjectId(), "text": "wyznawcy judaizmu (IV wiek p.n.e.)", "order": 3, "is_correct": false},{"_id": new ObjectId(), "text": "Celtowie (IV wiek n.e.)", "order": 2, "is_correct": false},{"_id": new ObjectId(), "text": "niemieccy protestanci (XVI wiek n.e.)", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "Koœció³ prawos³awny (XV wiek n.e.)", "order": 1, "is_correct": false},]},{"text": "Który dzieñ tygodnia uznawany jest za dzieñ narodzin Jezusa (wed³ug obowi¹zuj¹cego obecnie ustalenia Hipolita z Rzymu)?", "points": 1, "order": 8,"type": 0, "answers": [{"_id": new ObjectId(), "text": "niedziela", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "poniedzia³ek", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "wtorek", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "œroda", "order": 0, "is_correct": true},{"_id": new ObjectId(), "text": "czwartek", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "pi¹tek", "order": 0, "is_correct": false},{"_id": new ObjectId(), "text": "sobota", "order": 0, "is_correct": false},]},
